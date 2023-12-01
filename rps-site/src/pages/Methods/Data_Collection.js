@@ -25,7 +25,7 @@ const Data_Collection = () => {
         <h2>Data Collection</h2>
             <h3>Surface EMG</h3>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <img src="/images/emg.png" alt="Arm EMG" style={{ width: '25%', height: 'auto', marginRight: '2%'}} />
+                    <img src={process.env.PUBLIC_URL + "/images/emg.png"} alt="Arm EMG" style={{ width: '25%', height: 'auto', marginRight: '2%'}} />
                     <p style={{ whiteSpace: 'pre-line' }}>
                         Surface electromyography signal processing is a way to record the duration and magnitude of muscle activity. However, because surface EMG is non-invasive, there are multiple factors that create noise in raw EMG data including but not limited to skin, sensor placement, blood flow, temperature, and the electronic equipment itself. 
                     </p>
