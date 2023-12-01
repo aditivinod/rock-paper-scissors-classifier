@@ -19,7 +19,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
+      <Router basename="/rock-paper-scissors-classifier">
         <AppBar position="static">
           <Toolbar style={{ display: 'flex', justifyContent: 'flex-end' }}>
             <Typography component={Link} to="/" style={{ color: theme.palette.text.secondary, textDecoration: 'none' }}>
