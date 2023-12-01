@@ -32,10 +32,10 @@ const Improvement = () => {
                 However, the live classification scores were abysmal, with varying sensor placement likely being the culprit. Low accuracy was often correlated with the EMG electrodes being too far back on users’ wrists.
             </p>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <img src="./images/trainres.png" alt="Training CF" style={{ width: '50%', height: 'auto' }} />
-                    <img src="./images/testres.png" alt="Testing CF" style={{ width: '50%', height: 'auto' }} />
+                    <img src="/images/trainres.png" alt="Training CF" style={{ width: '50%', height: 'auto' }} />
+                    <img src="/images/testres.png" alt="Testing CF" style={{ width: '50%', height: 'auto' }} />
             </div>  
-            <img src="./images/liveres.png" alt="Live Results CF" style={{ width: '50%', height: 'auto' }} />
+            <img src="/images/liveres.png" alt="Live Results CF" style={{ width: '50%', height: 'auto' }} />
     </div>
   );
 };
