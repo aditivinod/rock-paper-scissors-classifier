@@ -13,8 +13,10 @@ const Home = () => {
   return (
     <div>
       <h1>Surface EMG - Rock-Paper-Scissors</h1>
-      <p>
-        The rock-paper-scissors classifier translates muscle impulses collected using a wireless EMG armband into gesture information. Using a dataset of over 600 gesture samples, a neural-based model was generated, facilitating live classification of rock, paper, and scissors hand gestures.
+      <p style={{ whiteSpace: 'pre-line' }}> 
+        The rock-paper-scissors classifier translates muscle impulses collected using a wireless EMG armband into gesture information. Using a dataset of over 600 gesture samples, a neural-based model was generated, facilitating live classification of rock, paper, and scissors hand gestures.{'\n'}
+        {'\n'}
+        <a href="https://github.com/aditivinod/rock-paper-scissors-classifier" target="_blank">Source Code</a>
       </p>
 
       {/* Three Big Buttons */}
