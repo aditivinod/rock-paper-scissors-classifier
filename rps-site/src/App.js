@@ -55,7 +55,14 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route exact path ="/{rock-paper-scissors-classifier}" element={<Home />} />
+            <Route
+              path="/"
+              element={<Navigate to="/home" replace />}
+            />
+            <Route
+              path="/{rock-paper-scissors-classifier}"
+              element={<Navigate to="/home" replace />}
+            />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/context/application" element={<Application />} />
             <Route path="/context/system_diagram" element={<System_Diagram />} />
