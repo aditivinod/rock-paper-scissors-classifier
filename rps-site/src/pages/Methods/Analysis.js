@@ -14,12 +14,12 @@ const Analysis = () => {
                     {'\n'}
                     Final features included in model: 
                     <ol>
-                        <li>Variance</li>
-                        <li>Zero Crossings</li>
-                        <li>Waveform Length</li>
-                        <li>Mean Absolute Value</li>
-                        <li>Root Mean Square</li>
-                        <li>Slope-Sign Change</li>
+                        <li>Variance - The average squared deviation of the signal from its mean. In this case, the signal is all of the time points for a single channel and trial.</li>
+                        <li>Zero Crossings -  How many times the signal crossed from a positive voltage to a negative one. This is a measure of activity. The more activity, the more zero crossings.</li>
+                        <li>Waveform Length - The extent to which the amplitude between adjacent EMG signals changes; the more a single value changes, the longer the signal’s length.</li>
+                        <li>Mean Absolute Value - The average potential of the signal. This gives a measure of the average nerve activity read by the sensor.</li>
+                        <li>Root Mean Square - The energy/power of an EMG signal, which correlates to the amount of muscle production and duration of muscle activities.</li>
+                        <li>Slope-Sign Change - A count that increases every time the slope of a signal changes slope sign. A mark of signal intensity.</li>
                     </ol>
                 </p>
             <h3>Algorithms/Classifiers</h3>
