@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rock-paper-scissors-classifier/rps-site/static/css/main.f855e6bc.css",
+    "main.js": "/rock-paper-scissors-classifier/rps-site/static/js/main.b97500db.js",
+    "static/js/787.1773ab51.chunk.js": "/rock-paper-scissors-classifier/rps-site/static/js/787.1773ab51.chunk.js",
+    "index.html": "/rock-paper-scissors-classifier/rps-site/index.html",
+    "main.f855e6bc.css.map": "/rock-paper-scissors-classifier/rps-site/static/css/main.f855e6bc.css.map",
+    "main.b97500db.js.map": "/rock-paper-scissors-classifier/rps-site/static/js/main.b97500db.js.map",
+    "787.1773ab51.chunk.js.map": "/rock-paper-scissors-classifier/rps-site/static/js/787.1773ab51.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.b97500db.js"
+  ]
+}
