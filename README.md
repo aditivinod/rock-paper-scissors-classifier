@@ -10,9 +10,9 @@ A model that takes in EMG inputs from armband-collected data and can determine w
 - Signal Processing Toolbox
 
 # Available Scripts
-`main` - Runs the training & testing and then calculates accuracies/f1 scores/confusion matrices.
 `collectData` - Runs the data collection script.
 `Concatenate` - compiles several trial runs of data collection together for bulk training.
+`main` - Runs the training & testing and then calculates accuracies/f1 scores/confusion matrices.
 
 # Helper Scripts
 `preprocessData` - Does the preprocessing on the raw EMG data.
