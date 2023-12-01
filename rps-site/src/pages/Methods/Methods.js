@@ -6,12 +6,12 @@ const Methods = () => {
       <h1>Methods</h1>
         <h2>Data Collection</h2>
             <h3>Surface EMG</h3>
-                <img src="/images/emg.png" alt="Arm EMG" style={{ width: '75%', height: 'auto' }} />
+                <img src="./images/emg.png" alt="Arm EMG" style={{ width: '75%', height: 'auto' }} />
                 <p>
                     Surface electromyography signal processing is a way to record the duration and magnitude of muscle activity. However, because surface EMG is non-invasive, there are multiple factors that create noise in raw EMG data including but not limited to skin, sensor placement, blood flow, temperature, and the electronic equipment itself. 
                 </p>
             <h3>Hardware</h3>
-                <img src="/images/pison.png" alt="PISON Vulcan Control Band" style={{ width: '50%', height: 'auto' }} />
+                <img src="./images/pison.png" alt="PISON Vulcan Control Band" style={{ width: '50%', height: 'auto' }} />
                 <p>
                     The PISON Technology Vulcan Control Band uses medical-grade electrodes and was used to pick up EMG data across four channels. 
                 </p>
@@ -19,22 +19,22 @@ const Methods = () => {
                 <p>
                     In order to minimize confounding due to noise, a specific protocol was followed during data collection. Control band location on arm, hand starting position, user’s arm position, user’s overall position, and preamble movement were maintained.
                 </p>
-                <img src="/images/armlocation.jpg" alt="PISON Arm Position" style={{ width: '75%', height: 'auto' }} />
+                <img src="./images/armlocation.jpg" alt="PISON Arm Position" style={{ width: '75%', height: 'auto' }} />
                 <p>
                     Control band location - the control band is worn like a watch on the outside of the user’s wrist with the “P” symbol facing their hand. 
                 </p>
-                <img src="/images/resting.jpg" alt="User Arm Position" style={{ width: '75%', height: 'auto' }} />
+                <img src="./images/resting.jpg" alt="User Arm Position" style={{ width: '75%', height: 'auto' }} />
                 <p>
                     Hand starting position - the default resting position is an outstretched arm with a relaxed hand.
                 </p>
-                <img src="/images/sitting.jpg" alt="User Overall Position" style={{ width: '75%', height: 'auto' }} />
+                <img src="./images/sitting.jpg" alt="User Overall Position" style={{ width: '75%', height: 'auto' }} />
                 <p>
                     User’s arm position & user’s overall position - the elbow of the arm being tested is supported, either by a solid chair arm or a desk while they are sitting.
                 </p>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <img src="/images/rockc.gif" alt="Rock" style={{ width: '75%', height: 'auto' }} />
-                    <img src="/images/paperc.gif" alt="Paper" style={{ width: '75%', height: 'auto' }} />
-                    <img src="/images/scissorc.gif" alt="Scissors" style={{ width: '75%', height: 'auto' }} />
+                    <img src="./images/rockc.gif" alt="Rock" style={{ width: '75%', height: 'auto' }} />
+                    <img src="./images/paperc.gif" alt="Paper" style={{ width: '75%', height: 'auto' }} />
+                    <img src="./images/scissorc.gif" alt="Scissors" style={{ width: '75%', height: 'auto' }} />
                 </div>        
                 <p style={{ whiteSpace: 'pre-line' }}>
                     Preamble movement - there was no movement (like bouncing up and down) before ‘shooting’ rock, paper, or scissors.{'\n'}
@@ -95,10 +95,10 @@ const Methods = () => {
                 However, the live classification scores were abysmal, with varying sensor placement likely being the culprit. Low accuracy was often correlated with the EMG electrodes being too far back on users’ wrists.
             </p>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <img src="/images/trainres.png" alt="Training CF" style={{ width: '50%', height: 'auto' }} />
-                    <img src="/images/testres.png" alt="Testing CF" style={{ width: '50%', height: 'auto' }} />
+                    <img src="./images/trainres.png" alt="Training CF" style={{ width: '50%', height: 'auto' }} />
+                    <img src="./images/testres.png" alt="Testing CF" style={{ width: '50%', height: 'auto' }} />
             </div>  
-            <img src="/images/liveres.png" alt="Live Results CF" style={{ width: '50%', height: 'auto' }} />
+            <img src="./images/liveres.png" alt="Live Results CF" style={{ width: '50%', height: 'auto' }} />
     </div>
   );
 };
