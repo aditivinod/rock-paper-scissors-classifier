@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes, Navigate } from 'react-router-dom';
 import { ThemeProvider, CssBaseline, AppBar, Toolbar, Typography, Tabs, Tab, Container, Popover, List, ListItem, ListItemText } from '@mui/material';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Home from './pages/Home/Home';
@@ -54,6 +54,11 @@ const App = () => {
         <Container>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route
+              path="/"
+              element={<Navigate to="/home" replace />}
+            />
+            <Route path="/home" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/context/application" element={<Application />} />
             <Route path="/context/system_diagram" element={<System_Diagram />} />
