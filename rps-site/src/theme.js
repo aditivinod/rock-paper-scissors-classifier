@@ -25,7 +25,7 @@ export default themeOptions;*/
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
-  palette: {
+ /* palette: {
     mode: 'light',
     primary: {
       main: '#15616D',
@@ -41,6 +41,39 @@ const theme = createTheme({
     background: {
       default: '#FFECD1',
       paper: '#FFECD1',
+    },
+  },
+});*/
+  palette: {
+    mode: 'light',
+    primary: {
+      main: '#15616D',
+    },
+    secondary: {
+      main: '#CCC5B9',
+    },
+    background: {
+      default: '#FFFCF2',
+      paper: '#FFFCF2',
+    },
+    text: {
+      primary: '#001524',
+      secondary: '#FFFCF2',
+    },
+  },
+  components: {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: '#FFFCF2', // Change text color for active and inactive tabs
+        },
+        textColorPrimary: {
+          color: '#FFFCF2', // Change text color for active tab
+        },
+        textColorSecondary: {
+          color: '#FFFCF2', // Change text color for inactive tab
+        },
+      },
     },
   },
 });

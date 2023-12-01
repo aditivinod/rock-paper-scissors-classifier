@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import { ThemeProvider, CssBaseline, AppBar, Toolbar, Typography, Tabs, Tab, Container, Popover, List, ListItem, ListItemText } from '@mui/material';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Home from './pages/Home/Home';
@@ -8,7 +8,6 @@ import System_Diagram from './pages/Context/System_Diagram';
 import Error_Effects  from './pages/Context/Error_Effects';
 import Errors_UX from './pages/Context/Errors_UX';
 import Connections from './pages/Context/Connections';
-import Methods from './pages/Methods/Methods';
 import Data_Collection from './pages/Methods/Data_Collection';
 import Analysis from './pages/Methods/Analysis';
 import Improvement from './pages/Methods/Improvement';
@@ -23,10 +22,10 @@ const App = () => {
       <Router>
         <AppBar position="static">
           <Toolbar style={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <Typography /*variant="h6"*/ component={Link} to="/">
+            <Typography component={Link} to="/" style={{ color: theme.palette.text.secondary, textDecoration: 'none' }}>
               Home
             </Typography>
-            <Tabs style={{ marginLeft: '20px' }}>
+            <Tabs style={{ marginLeft: '20px', color: theme.palette.secondary.main}}>
               <Tab label="About-Us" component={Link} to="/about-us" />
               <HoverableTab
                 label="Context"
@@ -103,6 +102,7 @@ const HoverableTab = ({ label, menuItems }) => {
         }
         onMouseEnter={handleMouseEnter}
         onClick={handleMenuClose}
+        style={{ color: theme.palette.text.secondary, textDecoration: 'none' }}
       />
       <Popover
         open={isHovered}
@@ -116,6 +116,7 @@ const HoverableTab = ({ label, menuItems }) => {
           vertical: 'top',
           horizontal: 'left',
         }}
+        style={{ color: theme.palette.text.secondary, textDecoration: 'none' }}
       >
         <List>
           {menuItems.map((menuItem) => (
