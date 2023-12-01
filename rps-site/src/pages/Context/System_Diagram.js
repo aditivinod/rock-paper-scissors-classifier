@@ -5,7 +5,7 @@ const System_Diagram = () => {
     <div>
         <h2>System Diagram</h2>
         <div style={{ margin: '0', padding: '0' }}>
-          <img src="/images/systemdiagram.png" alt="System Diagram" style={{ width: '75%', height: 'auto' }} />
+          <img src={process.env.PUBLIC_URL + "/images/systemdiagram.png"} alt="System Diagram" style={{ width: '75%', height: 'auto' }} />
         </div>
         <p style={{ whiteSpace: 'pre-line' }}>
             There are two primary phases of the technology for translating EMG inputs into movements in a prosthetic: myoelectric classification and myoelectric control.{'\n'}

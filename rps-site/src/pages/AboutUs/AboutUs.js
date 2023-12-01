@@ -15,7 +15,7 @@ const AboutUs = () => {
       </div>
       <p style={{ display: 'flex', justifyContent: 'space-between' }}>{'\n'}</p>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <img src="/images/ian_au.png" alt="Ian Photo" style={{ width: '20%', height: 'auto', marginRight: '5%'}} />
+          <img src={process.env.PUBLIC_URL + "/images/ian_au.png"} alt="Ian Photo" style={{ width: '20%', height: 'auto', marginRight: '5%'}} />
           <p style={{ whiteSpace: 'pre-line' }}>
             <b>Ian Walsh</b>{'\n'}
             <i>Class of 2026</i>{'\n'}

@@ -32,7 +32,7 @@ const Data_Collection = () => {
                 </div>
             <h3>Hardware</h3>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <img src="/images/pison.png" alt="PISON Vulcan Control Band" style={{ width: '25%', height: 'auto', marginRight: '2%'}} />
+                    <img src={process.env.PUBLIC_URL +"/images/pison.png"} alt="PISON Vulcan Control Band" style={{ width: '25%', height: 'auto', marginRight: '2%'}} />
                     <p style={{ whiteSpace: 'pre-line' }}>
                         The PISON Technology Vulcan Control Band uses medical-grade electrodes and was used to pick up EMG data across four channels. 
                     </p>
@@ -46,7 +46,7 @@ const Data_Collection = () => {
                 <Grid container>
                     {imageItems.map((item, index) => (
                         <Grid key={index} item xs={4}>
-                            <img src={item.src} alt={item.alt} style={{ width: '100%', height: 'auto' }} />
+                            <img src={process.env.PUBLIC_URL + item.src} alt={item.alt} style={{ width: '100%', height: 'auto' }} />
                             <Typography variant="subtitle1" style={{ whiteSpace: 'pre-line' }}>
                                 {item.text}
                             </Typography>
@@ -55,9 +55,9 @@ const Data_Collection = () => {
                 </Grid>
                 <p style={{ whiteSpace: 'pre-line' }}>{'\n'}</p>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <img src="/images/rockc.gif" alt="Rock" style={{ width: 'auto', height: 'auto' }} />
-                    <img src="/images/paperc.gif" alt="Paper" style={{ width: 'auto', height: 'auto' }} />
-                    <img src="/images/scissorc.gif" alt="Scissors" style={{ width: 'auto', height: 'auto' }} />
+                    <img src={process.env.PUBLIC_URL +"/images/rockc.gif"} alt="Rock" style={{ width: 'auto', height: 'auto' }} />
+                    <img src={process.env.PUBLIC_URL +"/images/paperc.gif"} alt="Paper" style={{ width: 'auto', height: 'auto' }} />
+                    <img src={process.env.PUBLIC_URL +"/images/scissorc.gif"} alt="Scissors" style={{ width: 'auto', height: 'auto' }} />
                 </div>        
                 <p style={{ whiteSpace: 'pre-line' }}>
                     Preamble movement - there is no movement (like bouncing up and down) before ‘shooting’ rock, paper, or scissors.{'\n'}
