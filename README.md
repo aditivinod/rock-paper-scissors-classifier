@@ -1,5 +1,6 @@
 # Rock, Paper, Scissors Classifier
-Authors: Aditi Vinod & Ian Walsh
+Authors: Aditi Vinod & Ian Walsh \
+Website: https://aditivinod.github.io/rock-paper-scissors-classifier
 
 A model that takes in EMG inputs from armband-collected data and can determine whether the user has thrown rock, paper, or scissors.
 
